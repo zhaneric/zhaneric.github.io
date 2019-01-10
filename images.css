@@ -1,0 +1,184 @@
+.row {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 0px;
+}
+#navo{
+  padding-left:10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
+}
+
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+}
+
+#firstcol{
+  margin-left: 4px;
+}
+
+img.resize{
+  transform-origin: top left;
+  /* IE 10+, Firefox, etc. */
+  -webkit-transform-origin: top left;
+  /* Chrome */
+  -ms-transform-origin: top left;
+  /* IE 9 */
+  image-orientation: 0deg;
+  width: 360px;
+
+}
+/* #notsospecial{
+  width: 350px;
+} */
+
+#special{
+  transform: rotate(90deg) translateY(-100%);
+ -webkit-transform: rotate(90deg) translateY(-100%);
+ -ms-transform: rotate(90deg) translateY(-100%);
+ height: 360px;
+ max-width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+html, body {
+  font-family: Courier;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top{
+  /* display:inline; */
+  font-weight:normal;
+  font-size: 16px;
+  padding-left: 40px;
+  position:fixed;
+  background-color: #ffffff;
+  width: 100%; /* Full width */
+  height:7%;
+  top: 0;
+  padding-top: 20px;
+  /* text-align: center; */
+}
+
+ul{
+  font-size: 13px;
+  padding-top:35px;
+  list-style:none;
+  line-height:35px;
+}
+
+/* .container div{
+  display:inline-flex;
+} */
+
+.main{
+  font-weight:normal;
+  font-size: 14px;
+  padding-left: 450px;
+  padding-top: 200px;
+}
+
+div{
+  display:inline;
+  line-height:35px;
+  font-size: 14px;
+  /* text-align: center; */
+
+}
+
+a:link{
+  color:black;
+}
+
+a:visited{
+  color:black;
+}
+
+a:active{
+  color:black;
+}
+
+.sidenav {
+  margin-top: 59px;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 0; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffffff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navbutton{
+  padding-left: 20px;
+  font-size: 15px;
+  padding-top: 400px;
+}
+
+.navbutton a{
+  text-decoration: none;
+}
+
+.navbutton a:hover {
+  color: #f1f1f1;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

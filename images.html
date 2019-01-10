@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zhan</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="images.css">  <!--linking to css file -->
+  <script>
+	var buttonclicks = 0;
+	var speed = 1500; /* The speed/duration of the effect in milliseconds */
+
+	function openNav() {
+		if(buttonclicks % 2 == 0)
+		{
+			// document.getElementById("pics").style.marginLeft = "10%";
+			document.getElementById("mySidenav").style.display = "block";
+
+			// document.getElementById("pics").style.maxWidth = "25%";
+
+			// document.getElementById("pics").style.marginTop = "10%";
+
+			document.getElementById("mySidenav").style.width = "250px";
+			buttonclicks++;
+		}
+		else{
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("pics").style.marginLeft = "0%";
+
+			buttonclicks++;
+		}
+	}
+
+	/* Set the width of the side navigation to 0 */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		// document.getElementById("navo").innerHTML = "<a href='#'> (learn more) </a>";
+	}
+
+  </script>
+</head>
+
+<body style = " font-size:12px;">
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(learn more)</a> -->
+    <a href="mainpage.html">who am i</a>
+    <a href="images.html">1000 words</a>
+    <a href="mywork.html">my work</a>
+    <a href="thoughts.html">brain dump</a>
+  </div>
+<br>
+  <script>
+
+  </script>
+
+	<div class = "top">
+		<div id = "navo" class = "navbutton" onclick="openNav()">
+	    <a href="#"> (learn more) </a>
+	  </div>
+    <div style="font-size: 16px; padding-left:300px">Eric Zhan (n.): Coder, Entrepreneur, Thrill-seeker</div>
+  </div>
+
+	<div id = "pics" class="row">
+    <div id = "firstcol" class="column">
+      <img class = "resize" src="fireworks.jpg">
+      <img class = "resize" src="pictures/IMG_0335.jpg">
+      <img class = "resize" src="fireworks.jpg">
+			<img class = "resize" src="pictures/IMG_0335.jpg">
+      <img class = "resize" src="fireworks.jpg">
+    </div>
+    <div class="column">
+      <img class = "resize" src="pictures/IMG_2623.jpg">
+      <img class = "resize" src="pictures/IMG_5383.jpg">
+      <img class = "resize" src="pictures/DSC_0720.jpg">
+			<img class = "resize" src="pictures/IMG_0335.jpg">
+      <img class = "resize" src="fireworks.jpg">
+    </div>
+    <div class="column">
+      <img class = "resize" src="pictures/IMG_1157.jpg" height = "550px">
+			<img class = "resize" src="pictures/IMG_5383.jpg">
+      <img class = "resize" src="pictures/DSC_0720.jpg">
+			<img class = "resize" src="pictures/IMG_0335.jpg">
+      <img class = "resize" src="fireworks.jpg">
+    </div>
+    <div class="column">
+      <img class = "resize" src="fireworks.jpg">
+			<img class = "resize" src="pictures/IMG_5383.jpg">
+      <img class = "resize" src="pictures/DSC_0720.jpg">
+			<img class = "resize" src="pictures/IMG_0335.jpg">
+      <img class = "resize" src="fireworks.jpg">
+    </div>
+</div>
+</body>
+</html>

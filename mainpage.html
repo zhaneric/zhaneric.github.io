@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zhan</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="mainpage.css">  <!--linking to css file -->
+  <script>
+
+
+	var i = 0;
+	var buttonclicks = 0;
+	var speed = 1500; /* The speed/duration of the effect in milliseconds */
+	setTimeout(function yaas(){
+
+		print();
+		 // Stuff to do as soon as the DOM is ready. Use $() w/o colliding with other libs
+		//  var start = new Date().getTime();
+		//  var end = start;
+		//  while(end < start + 1000) {
+		//    end = new Date().getTime();
+		// }
+		// if (i == 0)
+		// 	document.getElementById("def").innerHTML += "hey, how you doin'" + "</br>";
+		// else if(i==1)
+		// 	document.getElementById("def").innerHTML += "my name is Eric." + "</br>";
+		// else if(i==2)
+		// {
+		// 	document.getElementById("def").innerHTML += "i'm trying to use my skills to do some good in this giant world." + "</br>";
+		// 	// setTimeout(typeWriter, 5000);
+		// }
+		// else if(i==3)
+		// {
+		// 	document.getElementById("def").innerHTML += "i try to live life to the fullest." + "</br>";
+		// 	// setTimeout(typeWriter, 2500);
+		// }
+		// else if(i==4)
+		// 	document.getElementById("def").innerHTML += "this is my website." + "</br>";
+		//
+		// setTimeout(type, speed);
+		// i++;
+	}, 1000);
+
+	function print()
+	{
+		if (i == 0)
+			document.getElementById("def").innerHTML += "hey, how you doin'" + "</br>";
+		else if(i==1)
+			document.getElementById("def").innerHTML += "my name is Eric." + "</br>";
+		else if(i==2)
+		{
+			document.getElementById("def").innerHTML += "i'm trying to use my skills to do some good in this giant world." + "</br>";
+			// setTimeout(typeWriter, 5000);
+		}
+		else if(i==3)
+		{
+			document.getElementById("def").innerHTML += "i try to live life to the fullest." + "</br>";
+			// setTimeout(typeWriter, 2500);
+		}
+		else if(i==4)
+			document.getElementById("def").innerHTML += "a week ago i decided i wanted to build a website...";
+		else if(i==5)
+			document.getElementById("def").innerHTML += " so here it is." + "</br>";
+
+		setTimeout(print, speed);
+		i++;
+	}
+
+	function openNav() {
+		if(buttonclicks % 2 == 0)
+		{
+			document.getElementById("mySidenav").style.width = "250px";
+			buttonclicks++;
+		}
+		else{
+			document.getElementById("mySidenav").style.width = "0";
+			buttonclicks++;
+		}
+	}
+
+	/* Set the width of the side navigation to 0 */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		// document.getElementById("navo").innerHTML = "<a href='#'> (learn more) </a>";
+	}
+
+  </script>
+</head>
+
+<body style = " font-size:12px;" onload = "yaas()";>
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(learn more)</a> -->
+    <a href="mainpage.html">who am i</a>
+    <a href="images.html">1000 words</a>
+    <a href="mywork.html">my work</a>
+    <a href="thoughts.html">brain dump</a>
+  </div>
+<br>
+  <script>
+
+  </script>
+  <div id = "navo" class = "navbutton" onclick="openNav()">
+    <a href="#"> (learn more) </a>
+  </div>
+	<div class = "top">
+    Eric Zhan (n.): Coder, Entrepreneur, Thrill-seeker <br><br><br>
+		<script>
+    </script>
+  </div>
+  <div class="container">
+    <div>
+      <p id="def" class="main">
+      </p>
+    </div>
+  </div>
+</body>
+</html>

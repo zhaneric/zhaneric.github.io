@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zhan</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="goals.css">  <!--linking to css file -->
+  <script>
+	var buttonclicks = 0;
+	var speed = 1500; /* The speed/duration of the effect in milliseconds */
+
+	function openNav() {
+		if(buttonclicks % 2 == 0)
+		{
+			document.getElementById("mySidenav").style.display = "block";
+			document.getElementById("mySidenav").style.width = "250px";
+			buttonclicks++;
+		}
+		else{
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("pics").style.marginLeft = "0%";
+			buttonclicks++;
+		}
+	}
+  </script>
+</head>
+
+<body style = " font-size:12px;">
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(learn more)</a> -->
+    <a href="mainpage.html">who am i</a>
+    <a href="images.html">1000 words</a>
+    <a href="#">my work</a>
+    <a href="#">brain dump</a>
+  </div>
+<br>
+  <div id = "navo" class = "navbutton" onclick="openNav()">
+    <a href="#"> (learn more) </a>
+  </div>
+	<div class = "top">
+    eric zhan<br><br><br>
+  </div>
+  <br><br><br>
+
+  <div id = "pics" class="row">
+    <div class="column">
+      random ish
+      <ul class="listyea">
+        <li>hello</li>
+        </ul>
+    </div>
+    <div class ="column">
+      places to visit
+      </div>
+    <div class ="column">
+      places to visit
+      </div>
+  </div>
+
+
+</body>
+</html>

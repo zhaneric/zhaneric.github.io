@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zhan</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="mywork.css">  <!--linking to css file -->
+  <script>
+	var buttonclicks = 0;
+	var speed = 1500; /* The speed/duration of the effect in milliseconds */
+
+	function openNav() {
+		if(buttonclicks % 2 == 0)
+		{
+			document.getElementById("mySidenav").style.display = "block";
+			document.getElementById("mySidenav").style.width = "250px";
+			buttonclicks++;
+		}
+		else{
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("pics").style.marginLeft = "0%";
+			buttonclicks++;
+		}
+	}
+  </script>
+</head>
+
+<body style = " font-size:12px;">
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(learn more)</a> -->
+    <a href="mainpage.html">who am i</a>
+    <a href="images.html">1000 words</a>
+    <a href="mywork.html">my work</a>
+    <a href="thoughts.html">brain dump</a>
+  </div>
+<br>
+  <div id = "navo" class = "navbutton" onclick="openNav()">
+    <a href="#"> (learn more) </a>
+  </div>
+	<div class = "top">
+    eric zhan<br><br><br>
+  </div>
+  <br><br><br>
+
+
+    <div class="column">
+      Where i've worked</div>
+      <br>
+    <div class = "skillz">iD Tech Camps (Lead Instructor)</div> <br>
+    <li class="indent">Taught C++ and Java courses to high-school students and lead a team of 8 instructors</li>
+    <br>
+    <div class = "skillz">Viterbi Admissions Center (Admissions Intern)</div>
+    <br><li class="indent">Organize events, provide technical support, maintain data, and respond to questions of prospective students</li>
+    <br>
+    <div class = "skillz">Calvin Klein (Sales Associate)</div>
+    <br><li class="indent">Performed multiple tasks, including working at cash register and interacting with customers daily, to achieve customer satisfaction</li>
+    <br>
+    <div class = "skillz">Kumon Learning Center (Teacher's Assistant)</div>
+    <br><li class="indent">Tutored students ranging from elementary to middle school in math and reading</li>
+    <br><li class="indent" style="padding-top:5px">Assisted manager in communicating parental needs and managing student database</li>
+    <br>
+    <br>
+    <div class="column">
+      My Projects</div>
+      <br>
+    <div class = "skillz">Sea Foam Apparel (Co-Founder)</div> <br>
+    <li class="indent">Founded a t-shirt company in high-school with 2 others and we were all responsible for design, advertisement, and sales</li>
+    <br><li class="indent" style="padding-top:5px">Profited over $2,000 in 2 months and sold over 200 t-shirts</li>
+    <br>
+    <div class = "skillz">zhaneric.com (Webmaster)</div> <br>
+    <li class="indent">Created this website in a week span, with no prior web design experience using google as my only resource</li>
+    <br><div class = "skillz">UNICEF Club (Co-Founder and Vice President)</div> <br>
+    <li class="indent">Started a local UNICEF chapter that focused on volunteer work and donating fundraising money to aid children in need</li>
+
+</body>
+</html>

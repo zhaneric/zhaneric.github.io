@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zhan</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="main.css">  <!--linking to css file -->
+  <script>
+    var i = 0;
+    var j = 0;
+    var txt = 'Eric Zhan (n.): Coder, adventurist, and beginner at a lot of things ('; /* The text */
+    var link = "learn more"
+    var speed = 40; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+      if (i < txt.length) {
+				if(i==txt.length-1)
+				{
+					// document.getElementById("def").innerHTML += "<br>";
+				}
+
+        document.getElementById("def").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+
+      }
+      else if (j < link.length){
+        document.getElementById("def").innerHTML += "<a onclick='myMove()' href='mainpage.html'>" + link.charAt(j) + "</a>";
+        // document.getElementById("def").innerHTML += "<button onclick='myMove()'>" + link.charAt(j) + "</button>";
+
+        j++;
+        if(j==link.length)
+          document.getElementById("def").innerHTML += ")";
+        setTimeout(typeWriter, speed);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+
+</head>
+
+<body style = " font-size:12px;" onload = "typeWriter()";>
+    <!-- <p id="demo"></p> -->
+	<h1 id ="def">
+  </h1>
+</body>
+</html>
