@@ -29,34 +29,142 @@
   <div id="mySidenav" class="sidenav">
     <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(learn more)</a> -->
     <a href="mainpage.html">who am i</a>
-    <a href="images.html">1000 words</a>
-    <a href="#">my work</a>
-    <a href="#">brain dump</a>
+    <a href="goals.html">what's next</a>
+    <a href="mywork.html">my work</a>
+    <a href="thoughts.html">brain dump</a>
   </div>
 <br>
-  <div id = "navo" class = "navbutton" onclick="openNav()">
+  <!-- <div id = "navo" class = "navbutton" onclick="openNav()">
     <a href="#"> (learn more) </a>
   </div>
 	<div class = "top">
     eric zhan<br><br><br>
+  </div> -->
+	<div class = "top">
+		<div id = "navo" class = "navbutton" onclick="openNav()">
+	    <a href="#"> (learn more) </a>
+	  </div>
+    <div style="font-size: 16px; padding-left:300px">Eric Zhan (n.): Coder, Entrepreneur, Thrill-seeker</div>
   </div>
-  <br><br><br>
-
-  <div id = "pics" class="row">
+  <!-- <br><br><br> -->
+	<div class = "intro" style=" display:block"> a lil bucket list
+		<!-- <br>this is mostly for my self-motivation -->
+		<br>click on anything to learn more
+	</div>
+	<br><br>
+  <div class="row">
     <div class="column">
-      random ish
-      <ul class="listyea">
-        <li>hello</li>
-        </ul>
+      random skillz
+      <!-- <ul class="listyea" style="text-decoration: none"> -->
+        <!-- <li style="text-decoration: none">Do a kickflip</li> -->
+        <!-- </ul> -->
     </div>
     <div class ="column">
       places to visit
       </div>
     <div class ="column">
-      places to visit
+      career goals
       </div>
   </div>
 
+	<div class="row">
+    <div class="listyea" >
+      <div id = "been skateboarding, no tricks in my belt yet" class="item">1. do a kickflip </div><br>
+			<div title = "pictures/IMG_3391.gif"  id = "i'm actually scared of heights. but can't go cliff diving without conquering the tallest cliff"class="item">2. jump off a cliff &#10004;</div><br>
+			<div id = "again, i'm not good with heights.. so this is tbd" class="item">3. bungee jump </div><br>
+			<div id = "still trying to survive mogul filled blues right now"class="item">4. clear a double black diamond </div><br>
+			<div id = "caught my first fish last year weighing in at a whopping 2 pounds" class="item">5. catch a marlin</div><br>
+			<div id = "went to a free painting session to learn how to paint because we wanted to decorate our room"title = "pictures/IMG_4818.jpg" class="item">6. paint something &#10004;</div><br>
+			<div id = "went surfing once, ended up with a lot of bug bites, still couldn't surf" class="item">7. learn how to surf</div><br>
+
+    </div>
+    <div class ="listyea">
+			<div class="item">drive down lombard st &#10004;</div><br>
+			<div class="item">see the giant redwoods of portland &#10004; </div><br>
+			<div class="item">lounge in marina bay sands &#10004; </div><br>
+			<div class="item">visit the famous dirty sixth &#10004; </div><br>
+			<div class="item">catch a luau in hawaii &#10004; </div><br>
+			<div class="item">enjoy a night market in taiwan &#10004; </div><br>
+			<div class="item">pose in front of james bond island &#10004; </div><br>
+			<div class="item">climb up to the hollywood sign &#10004; </div><br>
+			<div class="item">carve down lake tahoe &#10004; </div><br>
+			<div class="item">climb the great wall &#10004; </div><br>
+			<div class="item">catch a view from the eiffel tower</div><br>
+			<div class="item">boat down the grand canal</div><br>
+			<div class="item">visit the catacombs</div><br>
+			<div class="item">safari trip in africa</div><br>
+			<div class="item">escapade to antartica</div><br>
+			<div class="item">see the great pyramids</div><br>
+			<div class="item">ride down the streets of vietnam</div><br>
+			<div class="item">lounge in a spa in bali</div><br>
+
+		</div>
+    <div class ="listyea" style="padding-left:20px">
+			<div class="item">start a brand &#10004;</div><br>
+			<div class="item">make an app</div><br>
+			<div class="item">place 1st at a hackathon</div><br>
+			<div class="item">make a website &#10004;</div><br>
+			<div class="item">program an autonomous machine</div><br>
+			<div class="item">start a company</div><br>
+			<div class="item">forbes 30 before 30</div><br>
+    </div>
+  </div>
+
+	<!-- <img id="myImg" src="fireworks.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <!-- <span class="close">&times;</span> -->
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+	var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementsByClassName('item');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+
+	for(let i=0; i<img.length; i++){
+    img[i].onclick = function() {
+			modal.style.display = "block";
+			modalImg.src = img[i].title;
+			captionText.innerHTML = img[i].id;
+        // modals[i].style.display = "block";
+				if(img[i].title == "")
+				{
+					captionText.style.marginTop = "250px";
+				}
+    }
+}
+
+
+	// Get the <span> element that closes the modal
+	// var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	// span.onclick = function() {
+	// 	modal.style.display = "none";
+	// 	captionText.style.marginTop = "0px";
+	//
+	// }
+
+	window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+		captionText.style.marginTop = "0px";
+
+  }
+}
+</script>
 
 </body>
 </html>
