@@ -12,33 +12,7 @@
 	var buttonclicks = 0;
 	var speed = 1500; /* The speed/duration of the effect in milliseconds */
 	setTimeout(function yaas(){
-
 		print();
-		 // Stuff to do as soon as the DOM is ready. Use $() w/o colliding with other libs
-		//  var start = new Date().getTime();
-		//  var end = start;
-		//  while(end < start + 1000) {
-		//    end = new Date().getTime();
-		// }
-		// if (i == 0)
-		// 	document.getElementById("def").innerHTML += "hey, how you doin'" + "</br>";
-		// else if(i==1)
-		// 	document.getElementById("def").innerHTML += "my name is Eric." + "</br>";
-		// else if(i==2)
-		// {
-		// 	document.getElementById("def").innerHTML += "i'm trying to use my skills to do some good in this giant world." + "</br>";
-		// 	// setTimeout(typeWriter, 5000);
-		// }
-		// else if(i==3)
-		// {
-		// 	document.getElementById("def").innerHTML += "i try to live life to the fullest." + "</br>";
-		// 	// setTimeout(typeWriter, 2500);
-		// }
-		// else if(i==4)
-		// 	document.getElementById("def").innerHTML += "this is my website." + "</br>";
-		//
-		// setTimeout(type, speed);
-		// i++;
 	}, 1000);
 
 	function print()
@@ -46,21 +20,36 @@
 		if (i == 0)
 			document.getElementById("def").innerHTML += "hey, how you doin'" + "</br>";
 		else if(i==1)
-			document.getElementById("def").innerHTML += "my name is Eric." + "</br>";
+		{
+			document.getElementById("def").innerHTML += "my name is Eric.";
+		}
 		else if(i==2)
 		{
+			document.getElementById("def").innerHTML += "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthat's me." + "</br>";
+
+			document.getElementById("picyea").src += "pictures/thisone.png";
+			document.getElementById("me").src += "pictures/propic.jpg";
+
+		}
+		else if(i==3)
+		{
+			// document.getElementById("def").innerHTML += "that's me";
+
+			// document.getElementById("picyea").src = "";
+			// document.getElementById("me").src = "";
 			document.getElementById("def").innerHTML += "i'm trying to use my skills to do some good in this giant world." + "</br>";
 			// setTimeout(typeWriter, 5000);
 		}
-		else if(i==3)
+		else if(i==4)
 		{
 			document.getElementById("def").innerHTML += "i try to live life to the fullest." + "</br>";
 			// setTimeout(typeWriter, 2500);
 		}
-		else if(i==4)
-			document.getElementById("def").innerHTML += "a week ago i decided i wanted to build a website...";
 		else if(i==5)
+			document.getElementById("def").innerHTML += "a week ago i decided i wanted to build a website...";
+		else if(i==6)
 			document.getElementById("def").innerHTML += " so here it is." + "</br>";
+
 
 		setTimeout(print, speed);
 		i++;
@@ -102,16 +91,22 @@
   <div id = "navo" class = "navbutton" onclick="openNav()">
     <a href="#"> (learn more) </a>
   </div>
-	<div class = "top">
-    Eric Zhan (n.): Coder, Entrepreneur, Thrill-seeker <br><br><br>
+	<div class = "top" style="padding-left:500px">
+    Eric Zhan (n.) <br><br><br>
 		<script>
     </script>
   </div>
   <div class="container">
     <div>
+			<img id ="picyea" class = "propic" style="padding-left:600px; padding-top:180px;">
+			<img id ="me" class = "propic" style="padding-left:850px; padding-top:60px;">
+
       <p id="def" class="main">
       </p>
     </div>
   </div>
+
+
+</img>
 </body>
 </html>

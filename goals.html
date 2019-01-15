@@ -12,15 +12,22 @@
 	function openNav() {
 		if(buttonclicks % 2 == 0)
 		{
-			document.getElementById("mySidenav").style.display = "block";
+			// document.getElementById("mySidenav").style.display = "block";
+			// document.getElementById("mySidenav").style.width = "250px";
 			document.getElementById("mySidenav").style.width = "250px";
 			buttonclicks++;
 		}
 		else{
+			// document.getElementById("mySidenav").style.width = "0";
+			// document.getElementById("pics").style.marginLeft = "0%";
 			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("pics").style.marginLeft = "0%";
 			buttonclicks++;
 		}
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		// document.getElementById("navo").innerHTML = "<a href='#'> (learn more) </a>";
 	}
   </script>
 </head>
@@ -69,13 +76,16 @@
 
 	<div class="row">
     <div class="listyea" >
-      <div id = "been skateboarding, no tricks in my belt yet" class="item">1. do a kickflip </div><br>
-			<div title = "pictures/IMG_3391.gif"  id = "i'm actually scared of heights. but can't go cliff diving without conquering the tallest cliff"class="item">2. jump off a cliff &#10004;</div><br>
+      <div id = "if you ride a skateboard but can't do any tricks, can you actually skateboard?" class="item">1. do a kickflip </div><br>
+			<div title = "pictures/IMG_3391.gif"  id = "i'm actually scared of heights. but can't go cliff diving without conquering the tallest cliff"class="item">2. go cliff diving &#10004;</div><br>
 			<div id = "again, i'm not good with heights.. so this is tbd" class="item">3. bungee jump </div><br>
 			<div id = "still trying to survive mogul filled blues right now"class="item">4. clear a double black diamond </div><br>
 			<div id = "caught my first fish last year weighing in at a whopping 2 pounds" class="item">5. catch a marlin</div><br>
 			<div id = "went to a free painting session to learn how to paint because we wanted to decorate our room"title = "pictures/IMG_4818.jpg" class="item">6. paint something &#10004;</div><br>
 			<div id = "went surfing once, ended up with a lot of bug bites, still couldn't surf" class="item">7. learn how to surf</div><br>
+			<div id = "more accurate than deadshot" title = "pictures/IMG_3197.jpg" class="item">8. shoot a rifle &#10004;</div><br>
+			<div id = "again, i'm not good with heights.. so this is tbd" class="item">9. clear a v6 free climb </div><br>
+
 
     </div>
     <div class ="listyea">
@@ -89,6 +99,7 @@
 			<div class="item">climb up to the hollywood sign &#10004; </div><br>
 			<div class="item">carve down lake tahoe &#10004; </div><br>
 			<div class="item">climb the great wall &#10004; </div><br>
+			<div class="item">walk the grand canyon &#10004; </div><br>
 			<div class="item">catch a view from the eiffel tower</div><br>
 			<div class="item">boat down the grand canal</div><br>
 			<div class="item">visit the catacombs</div><br>
@@ -97,6 +108,8 @@
 			<div class="item">see the great pyramids</div><br>
 			<div class="item">ride down the streets of vietnam</div><br>
 			<div class="item">lounge in a spa in bali</div><br>
+			<div class="item">walk the famous shibuya crossing</div><br>
+
 
 		</div>
     <div class ="listyea" style="padding-left:20px">
@@ -161,7 +174,6 @@
   if (event.target == modal) {
     modal.style.display = "none";
 		captionText.style.marginTop = "0px";
-
   }
 }
 </script>
