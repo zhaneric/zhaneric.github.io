@@ -16,7 +16,10 @@ html, body {
   text-decoration:none;
 }
 .column {
-  margin-left: 150px;
+  /* margin-left: 150px; */
+  margin-left:660px;
+  margin-top:300px;
+  font-size:14px;
 }
 .row {
   margin-top: 10px;
@@ -28,7 +31,7 @@ html, body {
   /* display:inline; */
   font-weight:normal;
   font-size: 16px;
-  padding-left: 540px;
+  padding-left: 547px;
   position:fixed;
   /* text-align: center; */
 }
