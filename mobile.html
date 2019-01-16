@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Zhan</title>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <style>
+      body {
+				font-family: 'Overpass', sans-serif;
+				/* font-size:16px; */
+      }
+    </style>
+	<link rel="stylesheet" type="text/css" href="mobile.css">  <!--linking to css file -->
+  <script>
+	var buttonclicks = 0;
+	var speed = 1500; /* The speed/duration of the effect in milliseconds */
+
+	function openNav() {
+		if(buttonclicks % 2 == 0)
+		{
+			// document.getElementById("mySidenav").style.display = "block";
+			document.getElementById("mySidenav").style.width = "250px";
+			buttonclicks++;
+		}
+		else{
+			document.getElementById("mySidenav").style.width = "0";
+			// document.getElementById("pics").style.marginLeft = "0%";
+			buttonclicks++;
+		}
+	}
+  </script>
+</head>
+
+<body style = " font-size:12px;">
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">(learn more)</a> -->
+		<a href="mainpage.html">who am i</a>
+    <a href="goals.html">what's next</a>
+    <a href="mywork.html">my work</a>
+    <a href="thoughts.html">brain dump</a>
+  </div>
+<br>
+
+
+
+  <p class="column">
+      currently not mobile friendly. sorry :/</p>
+      <!-- <br> -->
+
+
+</body>
+</html>
