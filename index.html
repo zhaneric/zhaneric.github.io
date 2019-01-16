@@ -19,6 +19,9 @@
     var link = "learn more"
     var speed = 40; /* The speed/duration of the effect in milliseconds */
 
+		if (screen.width <= 699) {
+			document.location = "mainpage.html";
+		}
     function typeWriter() {
       if (i < txt.length) {
 				if(i==txt.length-1)
