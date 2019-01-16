@@ -1,5 +1,5 @@
 html, body {
-  font-family: Courier;
+  /* font-family: Courier; */
   margin: 0;
   width: 100%;
   height: 100%;
@@ -17,9 +17,9 @@ html, body {
 }
 .column {
   /* margin-left: 150px; */
-  margin-left:660px;
+  margin-left:678px;
   margin-top:300px;
-  font-size:14px;
+  font-size:15px;
 }
 .row {
   margin-top: 10px;
@@ -30,26 +30,16 @@ html, body {
 .top{
   /* display:inline; */
   font-weight:normal;
-  font-size: 16px;
-  padding-left: 547px;
+  font-size: 18px;
+  padding-left: 568px;
   position:fixed;
+
   /* text-align: center; */
 }
 
-ul{
-  font-size: 13px;
-  padding-top:35px;
-  list-style:none;
-  line-height:35px;
-}
-
-/* .container div{
-  display:inline-flex;
-} */
-
 .main{
   font-weight:normal;
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 450px;
   padding-top: 200px;
 }
@@ -57,7 +47,7 @@ ul{
 div{
   display:inline;
   line-height:35px;
-  font-size: 14px;
+  font-size: 15px;
   /* text-align: center; */
 
 }
@@ -75,7 +65,7 @@ a:active{
 }
 
 .sidenav {
-  margin-top: 60px;
+  margin-top: 70px;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -112,7 +102,7 @@ a:active{
 
 .navbutton{
   padding-left: 20px;
-  font-size: 15px;
+  font-size: 17px;
   padding-top: 400px;
 }
 
