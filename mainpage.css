@@ -34,9 +34,11 @@ html, body {
   /* box-shadow: 10px 10px 5px grey; */
 
   /* text-align: center; */
-  width: 84vw;
-      display: inline-flex;
-      justify-content: center;
+  width: 100vw;
+
+  display: inline-flex;
+  margin-left: 39.5%
+  /* justify-content: center; */
 }
 
 ul{
@@ -58,7 +60,7 @@ ul{
 }
 
 div{
-  /* display:inline; */
+  display:inline;
   line-height:35px;
   font-size: 14px;
   /* text-align: center; */
