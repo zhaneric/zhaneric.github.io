@@ -23,13 +23,20 @@ html, body {
 .top{
   /* display:inline; */
   /* left:50%; */
+  position: absolute;
   font-weight:normal;
   font-size: 18px;
-  padding-left: 340px;
-  position:fixed;
+  /* margin:auto; */
+  /* margin-left:50%; */
+  /* margin-right:auto; */
+  /* position:fixed; */
+  background-color: grey;
   /* box-shadow: 10px 10px 5px grey; */
 
   /* text-align: center; */
+  width: 84vw;
+      display: inline-flex;
+      justify-content: center;
 }
 
 ul{
@@ -51,7 +58,7 @@ ul{
 }
 
 div{
-  display:inline;
+  /* display:inline; */
   line-height:35px;
   font-size: 14px;
   /* text-align: center; */
@@ -110,7 +117,7 @@ a:active{
 .navbutton{
   padding-left: 20px;
   font-size: 17px;
-  padding-top: 400px;
+  background-color: blue;
 }
 
 .navbutton a{

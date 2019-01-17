@@ -34,7 +34,7 @@ html, body {
   /* margin:0 auto; */
    /* or absolute */
    width: 100vw;
-       height: 85vh;
+       height: 83vh;
        display: flex;
        align-items: center;
        justify-content: center;
