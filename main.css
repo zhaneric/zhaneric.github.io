@@ -1,5 +1,5 @@
 html, body {
-  margin: 0;
+  /* margin: 0; */
   width: 100%;
   height: 100%;
   position:fixed;
@@ -8,68 +8,23 @@ html, body {
     left:0;
     right:0;
 }
-h1{
-  display:inline;
+#def{
+  /* display:inline; */
   font-weight:normal;
-  padding-left: 390px;
-  padding-top: 325px;
+  max-width:690px;
+
+  /* position:fixed; */
+  /* padding-left: 390px;
+  padding-top: 325px; */
   font-size: 20px;
-  line-height: 680px;
-}
-button{
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-a{
-  font-size: 20px;
-}
-a:link{
-  color:black;
-}
-
-a:visited{
-  color:black;
-}
-
-a:active{
-  color:black;
-}
-
-a:hover{
-  cursor:pointer;
-}
-#container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
-}
-
-#def {
-  position: relative;
-}
-
-#linkyea{
-  position: relative;
-}
-
-.main {
-  padding-left: 30px;
-  min-width: 75%;
-}
-
-.nav {
-  background-color: #FFEE00;
-  max-width: 25%;
-  min-width: 140px;
-  flex: 1;
-}
-
-.nav h1 {
-  /* padding-left: 20px; */
+  /* line-height: 680px; */
+  /* position:absolute; */
+  /* margin-left:50% */
+  /* position:relative; */
+  /* top:0; left:0; right:0; bottom:0; */
+  /* padding-top: 25%; */
+  margin-top:25%;
+  /* margin:0 auto; */
+  margin-left:auto;
+  margin-right:auto;
 }
