@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <head>
 	<title>Zhan</title>
 	<meta charset="utf-8"/>
 	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
@@ -16,7 +15,7 @@
     var i = 0;
     var j = 0;
     var txt = 'Eric Zhan (n.): Coder, adventurist, and beginner at a lot of things ('; /* The text */
-    var link = "learn more"
+    var link = "learn  more"
     var speed = 40; /* The speed/duration of the effect in milliseconds */
 
 		if (screen.width <= 699) {
@@ -36,7 +35,9 @@
       }
       else if (j < link.length){
         document.getElementById("def").innerHTML += "<a onclick='myMove()' href='mainpage.html'>" + link.charAt(j) + "</a>";
-        // document.getElementById("def").innerHTML += "<button onclick='myMove()'>" + link.charAt(j) + "</button>";
+
+				if(link.charAt(j) == 'n')
+				document.getElementById("def").innerHTML += "<a onclick='myMove()' href='mainpage.html'>" + "&nbsp"+ "</a>";
 
         j++;
         if(j==link.length)
@@ -48,17 +49,9 @@
 
 </head>
 
-<body onload = "typeWriter()";>
-    <!-- <p id="demo"></p> -->
-		<!-- <script>
-			function sizemeup()
-			{
-				var element = getElementById("def");
+<body onload="typeWriter()">
+	<h1 id ="def">
 
-				element.style.marginTop =
-			}
-		</script> -->
-	<div id ="def">
-  </div>
+  </h1>
 </body>
 </html>
