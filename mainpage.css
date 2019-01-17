@@ -30,7 +30,6 @@ html, body {
   /* margin-left:50%; */
   /* margin-right:auto; */
   /* position:fixed; */
-  background-color: grey;
   /* box-shadow: 10px 10px 5px grey; */
 
   /* text-align: center; */
@@ -48,15 +47,27 @@ ul{
   line-height:35px;
 }
 
-/* .container div{
-  display:inline-flex;
-} */
+.container{
+  /* display:inline-flex; */
+  display: flex;
+  width: 100vw;
+  height: 83vh;
+  /* background-color: orange; */
+}
 
 .main{
   font-weight:normal;
   font-size: 15px;
-  padding-left: 510px;
-  padding-top: 190px;
+  /* background-color: pink; */
+  /* width: 100vw;
+      height: 83vh; */
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      padding-top:25vh;
+      padding-left:37%;
+  /* padding-left: 510px;
+  padding-top: 190px; */
 }
 
 div{
@@ -119,7 +130,7 @@ a:active{
 .navbutton{
   padding-left: 20px;
   font-size: 17px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .navbutton a{
