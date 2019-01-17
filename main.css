@@ -10,8 +10,8 @@ html, body {
 }
 #def{
   /* display:inline; */
-  font-weight:normal;
-  max-width:690px;
+  /* font-weight:normal;
+  max-width:690px; */
 
   /* position:fixed; */
   /* padding-left: 390px;
@@ -23,8 +23,31 @@ html, body {
   /* position:relative; */
   /* top:0; left:0; right:0; bottom:0; */
   /* padding-top: 25%; */
-  margin-top:25%;
+  /* margin-top:25%; */
   /* margin:0 auto; */
+   /* or absolute */
+  top: 50%;
+  left: 50%;
   margin-left:auto;
   margin-right:auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+a{
+  font-size: 20px;
+}
+a:link{
+  color:black;
+}
+
+a:visited{
+  color:black;
+}
+
+a:active{
+  color:black;
+}
+
+a:hover{
+  cursor:pointer;
 }
