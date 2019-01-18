@@ -18,6 +18,10 @@ html, body {
 #listyea{
   text-decoration:none;
 }
+.foot{
+  font-size:12px;
+  padding-left:93%;
+}
 .column {
   /* margin-left: 150px; */
   width: 100vw;
@@ -28,6 +32,7 @@ html, body {
 
   font-size:15px;
 }
+
 .row {
   margin-top: 10px;
   display: flex;
