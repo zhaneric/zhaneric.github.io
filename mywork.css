@@ -22,21 +22,21 @@ html, body {
   text-decoration:underline;
 }
 .top{
-  /* display:inline; */
+  display:inline;
   /* font-weight:normal;
-  position:fixed;
-  background-color: #ffffff;
-  width: 110%; /* Full width */
-  /* height:7%;
+  /* position:fixed; */
+   /* background-color: #ffffff; */
+  width: 110%;
+  height:7%;
   top: 0;
   font-size: 18px;
   margin-left:-5px;
-  padding-top: 20px; */
-  position: absolute;
+  padding-top: 20px;
+  /* position: absolute; */
   font-weight:normal;
   font-size: 18px;
   width: 100vw;
-  display: inline-flex;
+  /* display: inline-flex; */
   margin-left: 39.2%;
   /* text-align: center; */
 }
