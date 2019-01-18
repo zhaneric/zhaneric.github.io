@@ -33,10 +33,12 @@ html, body {
 }
 .column {
   flex: 25%;
-  max-width: 16%;
+  max-width: 25%;
   margin-left: 222px;
   font-weight: bold;
   font-size: 16px;
+  text-align:center;
+  margin-left: 94px;
   /* text-decoration: underline; */
 }
 .row {
@@ -47,19 +49,23 @@ html, body {
 }
 .top{
   /* display:inline; */
-  font-weight:normal;
+  /* font-weight:normal;
   font-size: 16px;
-  /* padding-left: 40px; */
   position:fixed;
   background-color: #ffffff;
-  width: 110%; /* Full width */
+  width: 110%;
   height:7%;
   top: 0;
-  /* left: -50; */
   margin-left:-5px;
-  padding-top: 20px;
+  padding-top: 20px; */
   /* box-shadow: 3px 3px 2px silver; */
+  position: absolute;
+  font-weight:normal;
+  font-size: 18px;
+  width: 100vw;
 
+  display: inline-flex;
+  margin-left: 39.5%;
   /* text-align: center; */
 }
 
@@ -142,7 +148,6 @@ a:active{
 .navbutton{
   padding-left: 20px;
   font-size: 17px;
-  padding-top: 400px;
 }
 
 .navbutton a{
