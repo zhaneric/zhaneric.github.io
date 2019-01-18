@@ -27,17 +27,22 @@ html, body {
 }
 .top{
   /* display:inline; */
-  font-weight:normal;
-  /* padding-left: 566px; */
+  /* font-weight:normal;
   position:fixed;
   background-color: #ffffff;
   width: 110%; /* Full width */
-  height:7%;
+  /* height:7%;
   top: 0;
   font-size: 18px;
-  /* left: -50; */
   margin-left:-5px;
-  padding-top: 20px;
+  padding-top: 20px; */
+  position: absolute;
+  font-weight:normal;
+  font-size: 18px;
+  width: 100vw;
+
+  display: inline-flex;
+  margin-left: 39.5%;
   /* text-align: center; */
 }
 
@@ -119,7 +124,7 @@ a:active{
 .navbutton{
   padding-left: 20px;
   font-size: 17px;
-  padding-top: 400px;
+  /* padding-top: 400px; */
   /* margin-bottom: 60px; */
 
 }
